@@ -547,8 +547,10 @@
     <section class="the-ritual-section">
         <div class="ritual-content-container">
             <div class="ritual-left-col">
-                <span class="ritual-subtitle">Daily Practice</span>
-                <h2 class="ritual-main-title">The Ritual</h2>
+                <div class="ritual-header">
+                    <span class="ritual-subtitle">Daily Practice</span>
+                    <h2 class="ritual-main-title">The Ritual</h2>
+                </div>
                 
                 <div class="ritual-steps-list">
                     <!-- Morning -->
@@ -588,33 +590,160 @@
         </div>
     </section>
 
-    <!-- Join Community / Newsletter -->
-    <section class="section" style="background: #3C3C3C; color: white; padding: 120px 0;">
-        <style>
-            .ritual-step-item {
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
-                width: 405px;
-                height: 186px;
-            }
-
-            .ritual-img-icon {
-                width: 44px;
-                height: 44px;
-                object-fit: contain;
-            }
-        </style>
-        <div class="container text-center">
-            <h2 style="font-size: 3rem; color: white; margin-bottom: 20px;">Join our community</h2>
-            <p style="opacity: 0.8; margin-bottom: 50px; max-width: 600px; margin: 0 auto 50px;">Sign up to receive exclusive offers, herbal wisdom, and early access to new releases.</p>
+    <!-- Suggested Routines Section -->
+    <section class="routines-section">
+        <div class="routines-main-wrapper">
+            <div class="routines-header">
+                <span class="routines-subtitle">Build Your Ritual</span>
+                <h2 class="routines-title">Suggested Routines</h2>
+            </div>
             
-            <form style="max-width: 500px; margin: 0 auto; display: flex; gap: 10px;">
-                <input type="email" placeholder="Email address" style="flex: 1; padding: 15px 25px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.2); background: transparent; color: white;">
-                <button type="submit" class="btn btn-primary btn-pill" style="white-space: nowrap;">SIGN UP</button>
-            </form>
+            <div class="routines-grid">
+                <!-- Morning Routine Row -->
+                <div class="routine-row morning-row">
+                    <div class="routine-text-block">
+                        <h3 class="routine-type-title">Morning Routine</h3>
+                        <ol class="routine-list">
+                            <li>Cleanser (Gentle Botanical Wash)</li>
+                            <li>Toner (Rose & Neroli)</li>
+                            <li>Serum (Radiance Oil)</li>
+                            <li>Moisturizer (Hydration Elixir)</li>
+                            <li>SPF (Natural Botanicals)</li>
+                        </ol>
+                    </div>
+                    <div class="routine-image-block">
+                        <img src="assets/img/shopbyconcern/Routin.png" alt="Morning Ritual" onerror="this.src='https://images.unsplash.com/photo-1570172619669-d0dfd8763564?q=80&w=2670&auto=format&fit=crop';">
+                    </div>
+                </div>
+                
+                <!-- Night Routine Row -->
+                <div class="routine-row night-row">
+                    <div class="routine-image-block">
+                        <img src="assets/img/shopbyconcern/routine1.png" alt="Night Ritual" onerror="this.src='https://images.unsplash.com/photo-1552046122-03184de85e08?q=80&w=2574&auto=format&fit=crop';">
+                    </div>
+                    <div class="routine-text-block">
+                        <h3 class="routine-type-title">Night Routine</h3>
+                        <ol class="routine-list">
+                            <li>Cleanser (Botanical Makeup Remover)</li>
+                            <li>Essence (Lavender & Chamomile)</li>
+                            <li>Night Serum (Recovery Blend)</li>
+                            <li>Night Cream (Restorative Oil)</li>
+                            <li>Sleep Tea (Serenity Elixir)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- New Custom Section Container -->
+    <section class="next-section-layout">
+        <div class="next-section-container">
+            <div class="next-inner-content">
+                <div class="next-header">
+                    <span class="next-label">Knowledge</span>
+                    <h2 class="next-title">Got Questions?</h2>
+                </div>
+                
+                <div class="next-faq-wrapper">
+                    <div class="faq-list-container">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>WHAT IS THE DURATION OF THE COHORT?</span>
+                                <div class="faq-icon-plus">+</div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Our botanical wisdom cohorts typically run for 12 weeks, with deep-dive sessions twice a month to ensure seasonal alignment.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>HOW LONG WILL I HAVE ACCESS TO THE CONTENT?</span>
+                                <div class="faq-icon-plus">+</div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You will have lifetime access to the recorded sessions and the botanical guides so you can revisit them each season.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>WHAT EDITING SOFTWARE DO YOU TEACH?</span>
+                                <div class="faq-icon-plus">+</div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We focus on the art of capturing nature's essence using standard creative tools, with a emphasis on organic storytelling.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>I'M UNABLE TO ACCESS THE COHORT CONTENT, WHAT SHOULD I DO?</span>
+                                <div class="faq-icon-plus">+</div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Please reach out to our sanctuary support at care@sashraherbals.com and our team will guide you back to your learning path.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="faq-know-more">Know more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Join Our Community Section -->
+    <section class="community-section-layout">
+        <div class="community-container">
+            <div class="community-content">
+                <div class="community-header">
+                    <h2 class="community-title">JOIN OUR COMMUNITY</h2>
+                    <p class="community-subtitle">RECEIVE SEASONAL RITUALS, EARLY ACCESS, AND BOTANICAL WISDOM</p>
+                </div>
+                
+                <form class="community-form">
+                    <input type="email" placeholder="Enter your Email here" class="community-input">
+                    <button type="submit" class="community-submit">Join Now</button>
+                </form>
+                
+                <div class="community-socials">
+                    <span class="social-text">follow us on our social to stay update</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Decorative Leaf -->
+            <div class="community-decor-leaf">
+                <img src="assets/img/plant.png" alt="">
+            </div>
+
+        </div>
+    </section>
+    <!-- FAQ Accordion Script -->
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close other open items (optional, but cleaner)
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                });
+                
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
 </main>
+
 
 <?php include('includes/footer.php'); ?>
