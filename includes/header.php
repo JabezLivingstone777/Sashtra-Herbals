@@ -37,7 +37,7 @@
                 <li><a href="shop.php" class="<?php echo ($current_page == 'shop.php') ? 'active' : ''; ?>">Shop</a></li>
 
                 <li><a href="#about" class="<?php echo ($current_page == 'about.php') ? 'active' : ''; ?>">About</a></li>
-                <li><a href="#blog" class="<?php echo ($current_page == 'blog.php') ? 'active' : ''; ?>">Blog</a></li>
+                <li><a href="Blog.php" class="<?php echo ($current_page == 'Blog.php') ? 'active' : ''; ?>">Blog</a></li>
                 <li><a href="#contact" class="<?php echo ($current_page == 'contact.php') ? 'active' : ''; ?>">Contact</a></li>
             </ul>
         </nav>

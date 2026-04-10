@@ -1,11 +1,11 @@
 <?php include('includes/header.php'); ?>
 
 <main>
-    <!-- Blog Hero Section -->
-    <section class="blog-hero-section">
-        <div class="container hero-content-center">
-            <h1 class="blog-hero-title">Nature’s Healing Stories</h1>
-            <p class="blog-hero-desc">Discover herbal remedies, wellness rituals, and natural self-care tips inspired by timeless Ayurvedic wisdom.</p>
+    <!-- Blog Hero Banner -->
+    <section class="shop-hero-section blog-hero-style">
+        <div class="shop-hero-content">
+            <h1 class="shop-hero-title">Nature's Healing Stories</h1>
+            
         </div>
     </section>
 
@@ -20,12 +20,12 @@
         </div>
     </div>
 
-    <!-- Blog Archive Section -->
-    <section class="blog-archive-section">
+    <!-- Blog Filter Section -->
+    <section class="blog-filter-section">
         <div class="container">
-            <div class="blog-toolbar">
-                <h2 class="archive-title">Herbal Insights</h2>
-                <div class="blog-filters">
+            <div class="filter-bar">
+                <h2 class="filter-title">Herbal Insights</h2>
+                <div class="filter-buttons">
                     <button class="filter-btn active">All</button>
                     <button class="filter-btn">Hair Care</button>
                     <button class="filter-btn">Skin Care</button>
@@ -33,63 +33,68 @@
                     <button class="filter-btn">Aromatherapy</button>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="blog-grid">
-                <!-- Blog Post 1 -->
-                <article class="blog-card">
-                    <div class="blog-img-wrapper">
-                        <span class="blog-badge">Hair Care</span>
-                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=2574&auto=format&fit=crop" alt="5 Ayurvedic Herbs">
+    <!-- Blog Grid Section -->
+    <section class="blog-grid-section">
+        <div class="container">
+            <div class="blog-insights-grid">
+                <!-- Blog Case 1 -->
+                <article class="insight-card">
+                    <div class="insight-img">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2640&auto=format&fit=crop" alt="Ayurvedic Herbs">
+                        <span class="insight-tag">Hair Care</span>
                     </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="meta-item"><i class="fa-regular fa-calendar"></i> 07 April 2026</span>
-                            <span class="meta-item"><i class="fa-regular fa-user"></i> Sashra Herbals Team</span>
+                    <div class="insight-content">
+                        <div class="insight-meta">
+                            <span><i class="fa-regular fa-calendar"></i> 07 April 2026</span>
+                            <span><i class="fa-regular fa-user"></i> Sashra Herbals Team</span>
                         </div>
-                        <h3 class="blog-title">5 Ayurvedic Herbs That Naturally Reduce Hair Fall</h3>
-                        <p class="blog-excerpt">Discover powerful herbs like Bhringraj and Amla that strengthen hair roots and promote healthier, thicker hair naturally.</p>
-                        <div class="blog-footer">
-                            <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right-long"></i></a>
+                        <h3 class="insight-title">5 Ayurvedic Herbs That Naturally Reduce Hair Fall</h3>
+                        <p class="insight-excerpt">Discover powerful herbs like Bhringraj and Amla that strengthen hair roots and promote healthier, thicker hair naturally.</p>
+                        <div class="insight-footer">
+                            <a href="#" class="read-link">Read Artical <i class="fa-solid fa-arrow-right"></i></a>
                             <span class="read-time">10 min read</span>
                         </div>
                     </div>
                 </article>
 
-                <!-- Blog Post 2 -->
-                <article class="blog-card">
-                    <div class="blog-img-wrapper">
-                        <span class="blog-badge">Skin Care</span>
-                        <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=2670&auto=format&fit=crop" alt="Benefits of Turmeric">
+                <!-- Blog Case 2 -->
+                <article class="insight-card">
+                    <div class="insight-img">
+                        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2670&auto=format&fit=crop" alt="Turmeric Benefits">
+                        <span class="insight-tag">Skin Care</span>
                     </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="meta-item"><i class="fa-regular fa-calendar"></i> April 10, 2026</span>
-                            <span class="meta-item"><i class="fa-regular fa-user"></i> Herbal Wellness Expert</span>
+                    <div class="insight-content">
+                        <div class="insight-meta">
+                            <span><i class="fa-regular fa-calendar"></i> April 10, 2026</span>
+                            <span><i class="fa-regular fa-user"></i> Herbal Wellness Exper</span>
                         </div>
-                        <h3 class="blog-title">The Secret Benefits of Turmeric for Glowing Skin</h3>
-                        <p class="blog-excerpt">Learn how turmeric's natural anti-inflammatory and antioxidant properties help brighten skin and reduce blemishes.</p>
-                        <div class="blog-footer">
-                            <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right-long"></i></a>
+                        <h3 class="insight-title">The Secret Benefits of Turmeric for Glowing Skin</h3>
+                        <p class="insight-excerpt">Learn how turmeric's natural anti-inflammatory and antioxidant properties help brighten skin and reduce blemishes.</p>
+                        <div class="insight-footer">
+                            <a href="#" class="read-link">Read Artical <i class="fa-solid fa-arrow-right"></i></a>
                             <span class="read-time">3 min read</span>
                         </div>
                     </div>
                 </article>
 
-                <!-- Blog Post 3 -->
-                <article class="blog-card">
-                    <div class="blog-img-wrapper">
-                        <span class="blog-badge">Stress Relief</span>
-                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2670&auto=format&fit=crop" alt="Herbal Rituals">
+                <!-- Blog Case 3 -->
+                <article class="insight-card">
+                    <div class="insight-img">
+                        <img src="assets/img/products/cream_product.png" alt="Herbal Rituals">
+                        <span class="insight-tag">Stress Relief</span>
                     </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="meta-item"><i class="fa-regular fa-calendar"></i> 07 April 2026</span>
-                            <span class="meta-item"><i class="fa-regular fa-user"></i> Wellness Specialist</span>
+                    <div class="insight-content">
+                        <div class="insight-meta">
+                            <span><i class="fa-regular fa-calendar"></i> 07 April 2026</span>
+                            <span><i class="fa-regular fa-user"></i> Wellness Specialist</span>
                         </div>
-                        <h3 class="blog-title">Herbal Rituals to Reduce Stress After a Long Day</h3>
-                        <p class="blog-excerpt">Simple herbal wellness rituals using calming oils and teas to relax your mind and restore balance.</p>
-                        <div class="blog-footer">
-                            <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right-long"></i></a>
+                        <h3 class="insight-title">Herbal Rituals to Reduce Stress After a Long Day</h3>
+                        <p class="insight-excerpt">Simple herbal wellness rituals using calming oils and teas to relax your mind and restore balance.</p>
+                        <div class="insight-footer">
+                            <a href="#" class="read-link">Read Artical <i class="fa-solid fa-arrow-right"></i></a>
                             <span class="read-time">7 min read</span>
                         </div>
                     </div>

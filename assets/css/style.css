@@ -1870,7 +1870,8 @@ header.scrolled {
 .shop-hero-section {
     width: 100%;
     height: 380px;
-    margin-top: 96px; /* Header offset */
+    margin-top: 96px;
+    /* Header offset */
     background: url('../img/shop/breadcrum1.png');
     background-size: cover;
     background-position: center;
@@ -1890,14 +1891,15 @@ header.scrolled {
 }
 
 .breadcrumb-slug-bar {
-    background: #FFFFFF;
+    background: #FFFFFF !important;
     padding: 15px 0;
-    border-bottom: 1px solid #F0F0F0;
+    border: none !important;
     width: 100%;
 }
 
 .breadcrumb-slug-bar .container {
-    max-width: 1240px; /* Align with shop-catalog-container */
+    max-width: 1240px;
+    /* Align with shop-catalog-container */
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -2182,7 +2184,8 @@ header.scrolled {
     font-weight: 600;
     z-index: 10;
     text-transform: uppercase;
-    border-radius: 0 0 12px 0; /* Premium corner look */
+    border-radius: 0 0 12px 0;
+    /* Premium corner look */
     letter-spacing: 1px;
 }
 
@@ -2565,7 +2568,8 @@ header.scrolled {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     align-items: center;
     justify-content: center;
     z-index: 9999;
@@ -2792,7 +2796,8 @@ header.scrolled {
 
 .checkout-btn {
     width: 100%;
-    background: #4A5642; /* Branded green from screenshot */
+    background: #4A5642;
+    /* Branded green from screenshot */
     color: white;
     border: none;
     padding: 15px;
@@ -2826,4 +2831,196 @@ header.scrolled {
 .continue-shopping-btn:hover {
     background: #F9F9F7;
     color: #3C3C3C;
+}
+
+/* --- Herbal Insights Blog Styles --- */
+.blog-filter-section {
+    padding-top: 40px;
+    background: #FFFFFF;
+}
+
+.filter-bar {
+    width: 1128px;
+    height: 56px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none !important;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.shop-hero-section.blog-hero-style {
+    background: url('../img/blog/blog-hero.png') center/cover no-repeat;
+}
+
+.hero-subtitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    max-width: 700px;
+    margin: 20px auto 0;
+    line-height: 1.6;
+    opacity: 0.9;
+    color: #FFFFFF;
+}
+
+.filter-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #3C3C3C;
+    margin: 0;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid #E0E0E0;
+    padding: 8px 24px;
+    border-radius: 30px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: #8A9B64;
+    color: #8A9B64;
+}
+
+.filter-btn.active {
+    background: #8A9B64;
+    border-color: #8A9B64;
+    color: white;
+}
+
+.blog-grid-section {
+    padding-bottom: 50px;
+    background: #FFFFFF;
+}
+
+.blog-insights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+.insight-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.insight-card:hover {
+    transform: translateY(-5px);
+}
+
+.insight-img {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.insight-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.insight-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    color: #9B9B9B;
+    text-transform: capitalize;
+}
+
+.insight-content {
+    padding: 20px 0;
+}
+
+.insight-meta {
+    display: flex;
+    gap: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    color: #BDBDBD;
+    margin-bottom: 15px;
+}
+
+.insight-meta i {
+    margin-right: 5px;
+}
+
+.insight-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1A1A1A;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 56px;
+}
+
+.insight-excerpt {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    color: #8D8D8D;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 72px;
+}
+
+.insight-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #F0F0F0;
+    padding-top: 15px;
+}
+
+.read-link {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #3C3C3C;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.read-link:hover {
+    color: #8A9B64;
+}
+
+.read-time {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    color: #C0C0C0;
 }
