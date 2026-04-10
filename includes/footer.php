@@ -50,6 +50,46 @@
     </div>
 </footer>
 
+<!-- Cart Popup Modal -->
+<div id="cart-modal" class="modal-overlay">
+    <div class="cart-modal-container">
+        <div class="cart-modal-header">
+            <h2 class="cart-modal-title">Shop Now</h2>
+            <button class="cart-close-btn">&times;</button>
+        </div>
+        
+        <div class="cart-modal-body">
+            <div class="cart-items-section">
+                <!-- Dynamically populated via JS -->
+            </div>
+            
+            <div class="cart-summary-section">
+                <div class="summary-box">
+                    <div class="summary-row">
+                        <span class="summary-label">Subtotal:</span>
+                        <span class="summary-value subtotal-val">₹ 0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-label">Shipping-Charges :</span>
+                        <span class="summary-value shipping-val">₹ 0</span>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-row total-row">
+                        <span class="summary-label">Total :</span>
+                        <span class="summary-value total-val">₹ 0</span>
+                    </div>
+                    
+                    <button class="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cart-modal-footer">
+            <button class="continue-shopping-btn">Continue Shopping</button>
+        </div>
+    </div>
+</div>
+
 <script src="assets/js/script.js"></script>
 </body>
 </html>

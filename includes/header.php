@@ -31,12 +31,14 @@
         </div>
         
         <nav class="nav-center">
+            <?php $current_page = basename($_SERVER['PHP_SELF']); ?>
             <ul class="nav-links">
-                <li><a href="index.php" >Home</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.php" class="<?php echo ($current_page == 'index.php' || $current_page == '') ? 'active' : ''; ?>">Home</a></li>
+                <li><a href="shop.php" class="<?php echo ($current_page == 'shop.php') ? 'active' : ''; ?>">Shop</a></li>
+
+                <li><a href="#about" class="<?php echo ($current_page == 'about.php') ? 'active' : ''; ?>">About</a></li>
+                <li><a href="#blog" class="<?php echo ($current_page == 'blog.php') ? 'active' : ''; ?>">Blog</a></li>
+                <li><a href="#contact" class="<?php echo ($current_page == 'contact.php') ? 'active' : ''; ?>">Contact</a></li>
             </ul>
         </nav>
         
