@@ -223,7 +223,7 @@ header.scrolled {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
-    width: 1130px;
+    width: 1240px;
     margin: 0 auto;
 }
 
@@ -553,7 +553,7 @@ header.scrolled {
 
 .section-decoration.hand {
     position: absolute;
-    left: -130px;
+    left: -140px;
     bottom: -550px;
     width: 130px;
     height: 234px;

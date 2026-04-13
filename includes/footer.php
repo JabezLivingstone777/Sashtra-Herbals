@@ -90,6 +90,7 @@
     </div>
 </div>
 
+<script src="assets/js/cart.js?v=<?php echo filemtime('assets/js/cart.js'); ?>"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -67,25 +67,25 @@
             </div>
             
             <div class="grid-4">
-                <a href="#" class="category-card">
+                <a href="shop.php?category=Hair+Care" class="category-card">
                     <div class="category-img-wrapper">
                         <img src="assets/img/hair.png" alt="Hair Care" onerror="this.src='https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=2574&auto=format&fit=crop';">
                     </div>
                     <h3>Hair Care</h3>
                 </a>
-                <a href="#" class="category-card">
+                <a href="shop.php?category=Skin+Care" class="category-card">
                     <div class="category-img-wrapper">
                         <img src="assets/img/skin.jpg" alt="Skin Care" onerror="this.src='https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=2670&auto=format&fit=crop';">
                     </div>
                     <h3>Skin Care</h3>
                 </a>
-                <a href="#" class="category-card">
+                <a href="shop.php?category=Wellness" class="category-card">
                     <div class="category-img-wrapper">
                         <img src="assets/img/wellness.png" alt="Wellness">
                     </div>
                     <h3>Wellness</h3>
                 </a>
-                <a href="#" class="category-card">
+                <a href="shop.php?category=Aromatherapy" class="category-card">
                     <div class="category-img-wrapper">
                         <img src="assets/img/aromatherapy.png" alt="Aromatherapy" onerror="this.src='https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=80&w=2574&auto=format&fit=crop';">
                     </div>
@@ -120,7 +120,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-category">Hair Care</span>
-                            <h4 class="product-title">Advanced Hair Renew Oil</h4>
+                            <h4 class="product-title"><a href="product.php?id=1">Advanced Hair Renew Oil</a></h4>
                             <div class="product-footer">
                                 <span class="product-price">₹ 500/<small> 1pc</small></span>
                                 <button class="btn-add-to-cart">Add to Cart</button>
@@ -134,7 +134,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-category">Hair Care</span>
-                            <h4 class="product-title">Hair Renew Oil</h4>
+                            <h4 class="product-title"><a href="product.php?id=2">Hair Renew Oil</a></h4>
                             <div class="product-footer">
                                 <span class="product-price">₹ 500/<small> 1pc</small></span>
                                 <button class="btn-add-to-cart">Add to Cart</button>
@@ -148,7 +148,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-category">Hair Care</span>
-                            <h4 class="product-title">Anti-Dandruff Hair Pack</h4>
+                            <h4 class="product-title"><a href="product.php?id=3">Anti-Dandruff Hair Pack</a></h4>
                             <div class="product-footer">
                                 <span class="product-price">₹ 500/<small> 1pc</small></span>
                                 <button class="btn-add-to-cart">Add to Cart</button>
@@ -162,7 +162,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-category">Hair Care</span>
-                            <h4 class="product-title">Powder Hair Cleanser</h4>
+                            <h4 class="product-title"><a href="product.php?id=4">Powder Hair Cleanser</a></h4>
                             <div class="product-footer">
                                 <span class="product-price">₹ 500/<small> 1pc</small></span>
                                 <button class="btn-add-to-cart">Add to Cart</button>
@@ -176,7 +176,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-category">Hair Care</span>
-                            <h4 class="product-title">Botanical Shampoo</h4>
+                            <h4 class="product-title"><a href="product.php?id=5">Botanical Shampoo</a></h4>
                             <div class="product-footer">
                                 <span class="product-price">₹ 450/<small> 1pc</small></span>
                                 <button class="btn-add-to-cart">Add to Cart</button>
@@ -190,7 +190,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-category">Hair Care</span>
-                            <h4 class="product-title">Herbal Conditioner</h4>
+                            <h4 class="product-title"><a href="product.php?id=6">Herbal Conditioner</a></h4>
                             <div class="product-footer">
                                 <span class="product-price">₹ 480/<small> 1pc</small></span>
                                 <button class="btn-add-to-cart">Add to Cart</button>
@@ -204,7 +204,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-category">Hair Care</span>
-                            <h4 class="product-title">Scalp Treatment</h4>
+                            <h4 class="product-title"><a href="product.php?id=7">Scalp Treatment</a></h4>
                             <div class="product-footer">
                                 <span class="product-price">₹ 600/<small> 1pc</small></span>
                                 <button class="btn-add-to-cart">Add to Cart</button>
@@ -218,7 +218,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-category">Hair Care</span>
-                            <h4 class="product-title">Leafy Hair Mask</h4>
+                            <h4 class="product-title"><a href="product.php?id=8">Leafy Hair Mask</a></h4>
                             <div class="product-footer">
                                 <span class="product-price">₹ 550/<small> 1pc</small></span>
                                 <button class="btn-add-to-cart">Add to Cart</button>
@@ -232,7 +232,7 @@
                         </div>
                         <div class="product-info">
                             <span class="product-category">Hair Care</span>
-                            <h4 class="product-title">Vital Hair Serum</h4>
+                            <h4 class="product-title"><a href="product.php?id=9">Vital Hair Serum</a></h4>
                             <div class="product-footer">
                                 <span class="product-price">₹ 720/<small> 1pc</small></span>
                                 <button class="btn-add-to-cart">Add to Cart</button>

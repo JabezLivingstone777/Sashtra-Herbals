@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Advanced Hair Renew Oil",
+        "category": "Hair Care",
+        "price": 500,
+        "size": "100ml",
+        "badge": "25% OFF",
+        "rating": 4.5,
+        "reviews": 14,
+        "image": "assets/img/products/product1.png",
+        "gallery": [
+            "assets/img/products/product1.png",
+            "assets/img/products/product2.png",
+            "assets/img/products/product3.png"
+        ],
+        "description": "Revitalize your hair with the goodness of nature. Sashra Herbal Hair Revive Oil is a carefully crafted blend of traditional Ayurvedic herbs and nourishing oils that help strengthen hair roots, reduce hair fall, and restore natural shine.",
+        "ingredients": "Bhringraj, Brahmi, Amla, Coconut Oil, Sesame Oil, Hibiscus Extract.",
+        "how_to_use": "Apply a small amount to scalp and hair. Massage gently. Leave for at least 30 minutes or overnight before washing.",
+        "certifications": ["Vegan", "Sulfate free", "Paraben free", "Cruelty free", "No artificial color"]
+    },
+    {
+        "id": 2,
+        "name": "Hair Renew Oil",
+        "category": "Hair Care",
+        "price": 500,
+        "size": "150ml",
+        "badge": "",
+        "rating": 4.2,
+        "reviews": 8,
+        "image": "assets/img/products/product2.png",
+        "gallery": [
+            "assets/img/products/product2.png",
+            "assets/img/products/product1.png",
+            "assets/img/products/product3.png"
+        ],
+        "description": "A lighter version of our signature hair oil, perfect for daily use to maintain scalp health and hair texture.",
+        "ingredients": "Amla, Brahmi, Coconut Oil.",
+        "how_to_use": "Take a few drops and apply to the ends of your hair or massage into scalp.",
+        "certifications": ["Vegan", "Cruelty free"]
+    },
+    {
+        "id": 3,
+        "name": "Anti-Dandruff Hair Pack",
+        "category": "Hair Care",
+        "price": 500,
+        "size": "250ml",
+        "badge": "25% OFF",
+        "rating": 4.8,
+        "reviews": 22,
+        "image": "assets/img/products/product3.png",
+        "gallery": [
+            "assets/img/products/product3.png",
+            "assets/img/products/product1.png",
+            "assets/img/products/product2.png"
+        ],
+        "description": "Powerful herbal pack to combat dandruff and itchy scalp while providing deep nourishment.",
+        "ingredients": "Neem, Tulsi, Lemon Peel, Reetha.",
+        "how_to_use": "Mix with water or curd to form a paste. Apply to scalp. Wash after 20 minutes.",
+        "certifications": ["Sulfate free", "Paraben free"]
+    },
+    {
+        "id": 4,
+        "name": "Powder Hair Cleanser",
+        "category": "Skin Care",
+        "price": 500,
+        "size": "150ml",
+        "badge": "",
+        "rating": 4.6,
+        "reviews": 12,
+        "image": "assets/img/products/product4.png",
+        "gallery": [
+            "assets/img/products/product4.png",
+            "assets/img/products/product5.png",
+            "assets/img/products/product6.png"
+        ],
+        "description": "Traditional soap-free cleanser that cleanses without stripping natural oils.",
+        "ingredients": "Shikakai, Reetha, Amla.",
+        "how_to_use": "Mix with water, apply to wet hair, massage and rinse thoroughly.",
+        "certifications": ["Vegan", "No artificial color"]
+    },
+    {
+        "id": 5,
+        "name": "Botanical Shampoo",
+        "category": "Skin Care",
+        "price": 450,
+        "size": "150ml",
+        "badge": "25% OFF",
+        "rating": 4.4,
+        "reviews": 19,
+        "image": "assets/img/products/product5.png",
+        "gallery": [
+            "assets/img/products/product5.png",
+            "assets/img/products/product4.png",
+            "assets/img/products/product6.png"
+        ],
+        "description": "Gentle botanical shampoo for everyday use, enriched with herbal extracts.",
+        "ingredients": "Aloe Vera, Green Tea, Hibiscus.",
+        "how_to_use": "Apply to wet hair, lather and rinse.",
+        "certifications": ["Sulfate free", "Paraben free"]
+    },
+    {
+        "id": 6,
+        "name": "Herbal Conditioner",
+        "category": "Skin Care",
+        "price": 480,
+        "size": "250ml",
+        "badge": "",
+        "rating": 4.3,
+        "reviews": 15,
+        "image": "assets/img/products/product6.png",
+        "gallery": [
+            "assets/img/products/product6.png",
+            "assets/img/products/product4.png",
+            "assets/img/products/product5.png"
+        ],
+        "description": "Deeply conditioning herbal formula that leaves hair soft and manageable.",
+        "ingredients": "Jojoba Oil, Shea Butter, Fenugreek.",
+        "how_to_use": "Apply to hair lengths after shampooing. Leave for 2-3 minutes and rinse.",
+        "certifications": ["Cruelty free", "Vegan"]
+    },
+    {
+        "id": 7,
+        "name": "Scalp Treatment",
+        "category": "Wellness",
+        "price": 600,
+        "size": "150ml",
+        "badge": "25% OFF",
+        "rating": 4.9,
+        "reviews": 30,
+        "image": "assets/img/products/product7.png",
+        "gallery": [
+            "assets/img/products/product7.png",
+            "assets/img/products/product8.png",
+            "assets/img/products/product9.png"
+        ],
+        "description": "Intensive treatment for scalp issues, promoting healthy hair growth from the roots.",
+        "ingredients": "Tea Tree Oil, Rosemary, Peppermint.",
+        "how_to_use": "Apply directly to scalp using the applicator. Massage in.",
+        "certifications": ["Vegan", "Sulfate free"]
+    },
+    {
+        "id": 8,
+        "name": "Leafy Hair Mask",
+        "category": "Stress Relief",
+        "price": 550,
+        "size": "250ml",
+        "badge": "",
+        "rating": 4.7,
+        "reviews": 25,
+        "image": "assets/img/products/product8.png",
+        "gallery": [
+            "assets/img/products/product8.png",
+            "assets/img/products/product7.png",
+            "assets/img/products/product9.png"
+        ],
+        "description": "Nutrient-rich hair mask that repairs damage and adds volume.",
+        "ingredients": "Spinach Extract, Kale, Avocado Oil.",
+        "how_to_use": "Apply to damp hair after washing. Leave for 15 minutes and rinse.",
+        "certifications": ["Vegan", "No artificial color"]
+    },
+    {
+        "id": 9,
+        "name": "Vital Hair Serum",
+        "category": "Stress Relief",
+        "price": 720,
+        "size": "150ml",
+        "badge": "25% OFF",
+        "rating": 4.8,
+        "reviews": 18,
+        "image": "assets/img/products/product9.png",
+        "gallery": [
+            "assets/img/products/product9.png",
+            "assets/img/products/product7.png",
+            "assets/img/products/product8.png"
+        ],
+        "description": "Lightweight serum to control frizz and add a healthy shine to your hair.",
+        "ingredients": "Argan Oil, Vitamin E, Almond Oil.",
+        "how_to_use": "Take 2-3 drops on palms and smooth over hair lengths.",
+        "certifications": ["Cruelty free", "Paraben free"]
+    }
+]
