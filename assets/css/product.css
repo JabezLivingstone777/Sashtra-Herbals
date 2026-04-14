@@ -703,7 +703,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0px 0; /* Minimal vertical padding */
+    padding: 0 px 0; /* Minimal vertical padding */
     border-bottom: 1px solid #F0F0F0;
 }
 

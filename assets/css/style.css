@@ -9,7 +9,7 @@
     --primary-light: #5A7B45;
     --accent: #B19470;
     --accent-light: #C5AD8F;
-    --bg-cream: #F2F2EF;
+    --bg-cream: #ffffff;
     --bg-white: #FFFFFF;
     --text-dark: #3C3C3C;
     --text-muted: #707070;
@@ -2560,6 +2560,151 @@ header.scrolled {
     opacity: 0.6;
 }
 
+/* Empty Cart View */
+.empty-cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+    background: transparent;
+    width: 392px;
+    min-height: 363px; /* Changed from fixed height to prevent cutting */
+    margin: 0 auto;
+    gap: 32px; /* From Figma Spec */
+}
+
+
+.empty-cart-img {
+    width: 130px;
+    height: 160px;
+    object-fit: contain;
+    margin: 0;
+}
+
+.empty-cart-text-box {
+    width: 392px;
+    height: 59px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 11px; /* From Figma Spec */
+    margin: 0;
+}
+
+.empty-cart-headline {
+    width: 392px;
+    height: 24px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 18px; /* Standard h6 size or heading/size/h6 */
+    line-height: 24px;
+    color: #8A9B64;
+    margin: 0;
+    text-align: center;
+}
+
+.empty-cart-subtext {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    color: #9B9B9B;
+    margin: 0;
+    line-height: normal;
+}
+
+
+.empty-cart-explore-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1.5px solid #8A9B64;
+    color: #8A9B64;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.empty-cart-explore-btn:hover {
+    background: #8A9B64;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(138, 155, 100, 0.2);
+}
+
+/* ─────────────────────────────── WISHLIST NOTIFICATIONS */
+#notification-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.wishlist-notification {
+    background: var(--white);
+    padding: 16px 24px;
+    border-radius: 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--primary);
+    min-width: 280px;
+    animation: slideInNotif 0.4s ease forwards;
+    display: flex;
+    align-items: center;
+}
+
+.wishlist-notification.info {
+    border-left-color: var(--sage);
+}
+
+.wishlist-notification.fade-out {
+    animation: fadeOutNotif 0.3s ease forwards;
+}
+
+.notif-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--charcoal);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.notif-content i {
+    font-size: 18px;
+    color: var(--primary);
+}
+
+.wishlist-notification.info i {
+    color: var(--sage);
+}
+
+@keyframes slideInNotif {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeOutNotif {
+    to { opacity: 0; transform: translateY(-20px); }
+}
+
+/* Liked State */
+.product-wishlist i.fa-solid,
+.wishlist-action i.fa-solid {
+    color: #FF5A5A !important;
+}
+
+.product-wishlist.liked,
+.wishlist-action.liked {
+    /* Optional scale effect */
+}
+
 /* --- Cart Modal Popup --- */
 .modal-overlay {
     position: fixed;
@@ -2631,17 +2776,16 @@ header.scrolled {
 .cart-items-section {
     flex: 1;
     overflow-y: auto;
-    padding-right: 20px;
+    padding-right: 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
 }
 
 .cart-items-section::-webkit-scrollbar {
-    width: 6px;
+    display: none; /* Chrome, Safari, Opera */
 }
 
-.cart-items-section::-webkit-scrollbar-thumb {
-    background: #E0E0E0;
-    border-radius: 10px;
-}
+
 
 .cart-item {
     display: flex;

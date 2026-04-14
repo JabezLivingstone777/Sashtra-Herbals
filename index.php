@@ -113,9 +113,9 @@
             <div class="products-horizontal-wrapper">
                 <div class="products-container">
                     <!-- Product 1 -->
-                    <!-- Product 1 -->
-                    <div class="product-card" data-price="500">
+                    <div class="product-card" data-price="500" data-id="1" data-name="Advanced Hair Renew Oil">
                         <div class="product-img-wrapper">
+                            <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
                             <img src="assets/img/products/product1.png" alt="Advanced Hair Renew Oil">
                         </div>
                         <div class="product-info">
@@ -128,8 +128,9 @@
                         </div>
                     </div>
                     <!-- Product 2 -->
-                    <div class="product-card" data-price="500">
+                    <div class="product-card" data-price="500" data-id="2" data-name="Hair Renew Oil">
                         <div class="product-img-wrapper">
+                            <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
                             <img src="assets/img/products/product2.png" alt="Hair Renew Oil">
                         </div>
                         <div class="product-info">
@@ -142,13 +143,14 @@
                         </div>
                     </div>
                     <!-- Product 3 -->
-                    <div class="product-card" data-price="500">
+                    <div class="product-card" data-price="500" data-id="3" data-name="Brow Regrow Oil">
                         <div class="product-img-wrapper">
-                            <img src="assets/img/products/product3.png" alt="Anti-Dandruff Hair Pack">
+                            <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+                            <img src="assets/img/products/product3.png" alt="Brow Regrow Oil">
                         </div>
                         <div class="product-info">
-                            <span class="product-category">Hair Care</span>
-                            <h4 class="product-title"><a href="product.php?id=3">Anti-Dandruff Hair Pack</a></h4>
+                            <span class="product-category">Hair care</span>
+                            <h4 class="product-title"><a href="product.php?id=3">Brow Regrow Oil</a></h4>
                             <div class="product-footer">
                                 <span class="product-price">₹ 500/<small> 1pc</small></span>
                                 <button class="btn-add-to-cart">Add to Cart</button>
@@ -732,7 +734,7 @@
             item.addEventListener('click', () => {
                 const isActive = item.classList.contains('active');
                 
-                // Close other open items (optional, but cleaner)
+                // Close other open items
                 document.querySelectorAll('.faq-item').forEach(otherItem => {
                     otherItem.classList.remove('active');
                 });
@@ -742,120 +744,45 @@
                 }
             });
         });
+    </script>
 
-        // Dynamic Cart System Logic
-        let cartState = [];
-
+    <script>
+        // Use Global Cart System
         document.addEventListener('DOMContentLoaded', function() {
-            const cartCountElement = document.querySelector('.cart-count');
-            const cartModal = document.getElementById('cart-modal');
-            const cartItemsContainer = document.querySelector('.cart-items-section');
-            const closeModalBtns = document.querySelectorAll('.cart-close-btn, .continue-shopping-btn');
-            
-            // Summary Elements
-            const subtotalVal = document.querySelector('.subtotal-val');
-            const shippingVal = document.querySelector('.shipping-val');
-            const totalVal = document.querySelector('.total-val');
-
-            function updateCartUI() {
-                cartItemsContainer.innerHTML = '';
-                let subtotal = 0;
-                let totalItems = 0;
-
-                cartState.forEach((item, index) => {
-                    subtotal += item.price * item.quantity;
-                    totalItems += item.quantity;
-
-                    const itemHtml = `
-                        <div class="cart-item">
-                            <div class="cart-item-img">
-                                <img src="${item.image}" alt="${item.title}">
-                            </div>
-                            <div class="cart-item-details">
-                                <span class="cart-item-cat">${item.category}</span>
-                                <h4 class="cart-item-name">${item.title}</h4>
-                                <span class="cart-item-qty-meta">Standard Size</span>
-                            </div>
-                            <div class="cart-item-controls">
-                                <div class="qty-selector">
-                                    <button class="qty-btn" onclick="window.updateQty(${index}, -1)">-</button>
-                                    <span class="qty-text">${item.quantity}</span>
-                                    <button class="qty-btn" onclick="window.updateQty(${index}, 1)">+</button>
-                                </div>
-                                <span class="cart-item-price">₹ ${item.price * item.quantity}</span>
-                                <button class="cart-item-remove" onclick="window.removeItem(${index})">
-                                    <i class="fa-regular fa-trash-can"></i>
-                                </button>
-                            </div>
-                        </div>
-                    `;
-                    cartItemsContainer.insertAdjacentHTML('beforeend', itemHtml);
-                });
-
-                // Update Header Count
-                if (cartCountElement) {
-                    cartCountElement.textContent = totalItems;
-                    cartCountElement.style.transform = 'scale(1.3)';
-                    setTimeout(() => cartCountElement.style.transform = 'scale(1)', 200);
-                }
-
-                // Update Summary Values
-                if (subtotalVal) subtotalVal.textContent = `₹ ${subtotal}`;
-                const shipping = subtotal > 0 ? 50 : 0;
-                if (shippingVal) shippingVal.textContent = `₹ ${shipping}`;
-                if (totalVal) totalVal.textContent = `₹ ${subtotal + shipping}`;
-            }
-
-            // Expose update functions to window for onclick handlers
-            window.updateQty = (index, delta) => {
-                cartState[index].quantity += delta;
-                if (cartState[index].quantity < 1) cartState[index].quantity = 1;
-                updateCartUI();
-            };
-
-            window.removeItem = (index) => {
-                cartState.splice(index, 1);
-                updateCartUI();
-            };
-
-            // Add to Cart Click
-            document.querySelectorAll('.btn-add-to-cart').forEach(btn => {
+            // Handle Home Page Add to Cart buttons
+            document.querySelectorAll('.btn-add-to-cart, .glow-buy-btn').forEach(btn => {
                 btn.addEventListener('click', function(e) {
                     e.preventDefault();
+                    
+                    // Specific logic for product cards
                     const card = this.closest('.product-card');
-                    const productInfo = {
-                        title: card.querySelector('.product-title').textContent,
-                        category: card.querySelector('.product-category').textContent,
-                        image: card.querySelector('.product-img-wrapper img').src,
-                        price: parseFloat(card.getAttribute('data-price')),
-                        quantity: 1
-                    };
-
-                    // Check if already in cart
-                    const existingItem = cartState.find(item => item.title === productInfo.title);
-                    if (existingItem) {
-                        existingItem.quantity += 1;
-                    } else {
-                        cartState.push(productInfo);
+                    if (card) {
+                        const product = {
+                            title: card.querySelector('.product-title').textContent.trim(),
+                            category: card.querySelector('.product-category').textContent.trim(),
+                            price: parseFloat(card.getAttribute('data-price')),
+                            image: card.querySelector('.product-img-wrapper img').src,
+                            quantity: 1
+                        };
+                        window.addToCart(product);
+                        return;
                     }
 
-                    updateCartUI();
-                    if (cartModal) cartModal.classList.add('active');
+                    // Specific logic for Glow Carousel cards
+                    const glowCard = this.closest('.glow-card');
+                    if (glowCard) {
+                        const product = {
+                            title: glowCard.querySelector('.glow-product-name').textContent.trim(),
+                            category: 'Wellness', // Default for glow cards
+                            price: 500, // Placeholder price for demonstration
+                            image: glowCard.querySelector('.glow-thumb')?.src || glowCard.querySelector('img').src,
+                            quantity: 1
+                        };
+                        window.addToCart(product);
+                        return;
+                    }
                 });
             });
-
-            // Modal Close Logic
-            closeModalBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    if (cartModal) cartModal.classList.remove('active');
-                });
-            });
-
-            window.addEventListener('click', (e) => {
-                if (e.target === cartModal) cartModal.classList.remove('active');
-            });
-
-            updateCartUI();
         });
     </script>
 </main>

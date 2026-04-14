@@ -79,7 +79,7 @@
                         <span class="summary-value total-val">₹ 0</span>
                     </div>
                     
-                    <button class="checkout-btn">Checkout</button>
+                    <button class="checkout-btn" onclick="window.location.href='checkout.php'">Checkout</button>
                 </div>
             </div>
         </div>
@@ -90,6 +90,7 @@
     </div>
 </div>
 
+<script src="assets/js/wishlist.js?v=<?php echo filemtime('assets/js/wishlist.js'); ?>"></script>
 <script src="assets/js/cart.js?v=<?php echo filemtime('assets/js/cart.js'); ?>"></script>
 <script src="assets/js/script.js"></script>
 </body>

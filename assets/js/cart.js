@@ -11,6 +11,32 @@ function updateCartUI() {
 
     if (!cartItemsContainer) return;
 
+    if (cartState.length === 0) {
+        cartItemsContainer.innerHTML = `
+            <div class="empty-cart-container">
+                <img src="assets/img/emptycart.png" alt="Empty Cart" class="empty-cart-img">
+                <div class="empty-cart-text-box">
+                    <h3 class="empty-cart-headline">Its time to Fulfill your wishes</h3>
+                    <p class="empty-cart-subtext">Fill your cart with your choices, Hurry up</p>
+                </div>
+                <a href="shop.php" class="empty-cart-explore-btn">Explore products</a>
+            </div>
+        `;
+        const summarySection = document.querySelector('.cart-summary-section');
+        if (summarySection) summarySection.style.display = 'none';
+        
+        // Update Header Count
+        if (cartCountElement) cartCountElement.textContent = '0';
+        
+        // Persist
+        localStorage.setItem('sashra_cart', JSON.stringify(cartState));
+        return;
+    }
+
+    // Show summary if not empty
+    const summarySection = document.querySelector('.cart-summary-section');
+    if (summarySection) summarySection.style.display = 'block';
+
     cartItemsContainer.innerHTML = '';
     let subtotal = 0;
     let totalItems = 0;

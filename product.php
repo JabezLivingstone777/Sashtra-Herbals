@@ -48,11 +48,11 @@
                     <div class="purchase-actions">
                         <div class="purchase-row qty-wishlist">
                             <div class="qty-control">
-                                <button class="qty-btn minus" onclick="updateLocalQty(-1)">-</button>
-                                <input type="number" id="local-qty" value="1" min="1" class="qty-input">
-                                <button class="qty-btn plus" onclick="updateLocalQty(1)">+</button>
+                                <button type="button" class="qty-btn minus" onclick="updateLocalQty(-1)">-</button>
+                                <input type="number" id="local-qty" value="1" min="1" class="qty-input" readonly>
+                                <button type="button" class="qty-btn plus" onclick="updateLocalQty(1)">+</button>
                             </div>
-                            <div class="wishlist-action">
+                            <div class="wishlist-action" id="wishlist-btn" style="cursor:pointer;">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
@@ -341,6 +341,8 @@
         input.value = val;
     }
 
+
+
     // Toggle FAQ
     function toggleFAQ(card) {
         card.classList.toggle('active');
@@ -479,7 +481,7 @@
                     image: product.image,
                     quantity: qty
                 });
-                // Optional: redirect to checkout
+                window.location.href = 'checkout.php';
             };
         }
     });
