@@ -116,4 +116,48 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // --- Auth Modal Logic ---
+    const authModal = document.getElementById('auth-modal');
+    const authContainer = document.getElementById('auth-container');
+    const signinBtn = document.getElementById('signin-btn');
+    const authClose = document.getElementById('auth-close');
+    const toSignin = document.getElementById('to-signin');
+    const toSignup = document.getElementById('to-signup');
+
+    if (signinBtn && authModal) {
+        signinBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            authModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scroll
+        });
+    }
+
+    if (authClose) {
+        authClose.addEventListener('click', function() {
+            authModal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
+
+    if (authModal) {
+        authModal.addEventListener('click', function(e) {
+            if (e.target === authModal) {
+                authModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+
+    if (toSignin && authContainer) {
+        toSignin.addEventListener('click', function() {
+            authContainer.classList.add('right-panel-active');
+        });
+    }
+
+    if (toSignup && authContainer) {
+        toSignup.addEventListener('click', function() {
+            authContainer.classList.remove('right-panel-active');
+        });
+    }
 });

@@ -36,9 +36,9 @@
                 <li><a href="index.php" class="<?php echo ($current_page == 'index.php' || $current_page == '') ? 'active' : ''; ?>">Home</a></li>
                 <li><a href="shop.php" class="<?php echo ($current_page == 'shop.php') ? 'active' : ''; ?>">Shop</a></li>
 
-                <li><a href="#about" class="<?php echo ($current_page == 'about.php') ? 'active' : ''; ?>">About</a></li>
+                <li><a href="about.php" class="<?php echo ($current_page == 'about.php') ? 'active' : ''; ?>">About</a></li>
                 <li><a href="Blog.php" class="<?php echo ($current_page == 'Blog.php') ? 'active' : ''; ?>">Blog</a></li>
-                <li><a href="#contact" class="<?php echo ($current_page == 'contact.php') ? 'active' : ''; ?>">Contact</a></li>
+                <li><a href="contact.php" class="<?php echo ($current_page == 'contact.php') ? 'active' : ''; ?>">Contact</a></li>
             </ul>
         </nav>
         
@@ -48,7 +48,10 @@
                 <i class="fa-solid fa-bag-shopping"></i>
                 <span class="cart-count">2</span>
             </a>
-            <a href="#" class="nav-icon"><i class="fa-regular fa-user"></i></a>
+            <a href="#" class="nav-icon nav-signin-link" id="signin-btn">
+                <i class="fa-solid fa-circle-user"></i>
+                <span class="nav-signin-text">Sign In/Sign Up</span>
+            </a>
         </div>
 
         <div class="mobile-menu-toggle">
