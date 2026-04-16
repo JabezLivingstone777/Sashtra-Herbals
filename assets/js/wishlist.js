@@ -32,8 +32,10 @@ function syncWishlistUI() {
     document.querySelectorAll('.product-wishlist, .wishlist-action').forEach(btn => {
         // Try to identify the product by closest card or data attributes
         const card = btn.closest('.product-card');
-        const productTitle = card ? card.querySelector('.product-title').textContent.trim() : document.getElementById('product-title')?.textContent.trim();
+        const productTitle = card ? card.querySelector('.product-title')?.textContent.trim() : document.getElementById('product-title')?.textContent.trim();
         
+        if (!productTitle) return;
+
         const isInWishlist = wishlistState.some(item => item.title === productTitle);
         const icon = btn.querySelector('i');
         

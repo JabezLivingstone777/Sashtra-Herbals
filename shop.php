@@ -1,8 +1,37 @@
-<?php include('includes/header.php'); ?>
+<?php 
+include('includes/header.php'); 
+
+// Dynamic Category Breadcrumb Logic
+$selected_category = isset($_GET['category']) ? $_GET['category'] : '';
+
+$category_map = [
+    'Hair Care' => 'Hair.webp',
+    'Skin Care' => 'skincare.webp',
+    'Wellness' => 'wellneess.webp',
+    'Weekend Rituals' => 'weekend ritual.webp',
+    'Stress Relief' => 'stressrelief.webp',
+    'AntiAging' => 'antiaging.webp'
+];
+
+$banner_image = 'breadcrum1.png'; // Default
+if (!empty($selected_category) && isset($category_map[$selected_category])) {
+    $banner_image = $category_map[$selected_category];
+}
+
+// Check which directory the image is in
+if ($banner_image === 'breadcrum1.png') {
+    $banner_path = 'assets/img/shop/' . $banner_image;
+} else {
+    $banner_path = 'assets/img/breadcrums/' . $banner_image;
+}
+?>
 
 <main>
     <!-- Shop Breadcrumb Section -->
-    <section class="shop-hero-section">
+    <section class="shop-hero-section" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<?php echo $banner_path; ?>');">
+        <div class="container">
+            <h1 class="shop-hero-title"><?php echo !empty($selected_category) ? htmlspecialchars($selected_category) : 'Our Shop'; ?></h1>
+        </div>
     </section>
 
     <!-- Breadcrumb Slug Bar -->
@@ -11,7 +40,13 @@
             <nav class="breadcrumb-nav">
                 <a href="index.php" class="breadcrumb-link">Home</a>
                 <span class="breadcrumb-separator">/</span>
-                <span class="breadcrumb-current">Shop</span>
+                <?php if (!empty($selected_category)): ?>
+                    <a href="shop.php" class="breadcrumb-link">Shop</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current"><?php echo htmlspecialchars($selected_category); ?></span>
+                <?php else: ?>
+                    <span class="breadcrumb-current">Shop</span>
+                <?php endif; ?>
             </nav>
         </div>
     </div>
@@ -24,7 +59,7 @@
             <aside class="shop-sidebar">
                 <div class="sidebar-block">
                     <div class="sidebar-title" data-toggle="categories">
-                        <h3>Catgrories</h3>
+                        <h3>Categories</h3>
                         <span class="toggle-icon">-</span>
                     </div>
                     <ul class="sidebar-list" id="sidebar-categories">
@@ -61,6 +96,13 @@
                                 <input type="checkbox" data-category="Weekend Rituals">
                                 <span class="checkmark"></span>
                                 Weekend Rituals <span class="count">(7)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" data-category="AntiAging">
+                                <span class="checkmark"></span>
+                                AntiAging <span class="count">(1)</span>
                             </label>
                         </li>
                     </ul>

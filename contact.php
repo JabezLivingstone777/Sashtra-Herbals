@@ -115,17 +115,17 @@
                     <p class="community-subtitle">RECEIVE SEASONAL RITUALS, EARLY ACCESS, AND BOTANICAL WISDOM</p>
                 </div>
                 
-                <form class="community-form">
-                    <input type="email" placeholder="Enter your Email here" class="community-input">
+                <form class="community-form" id="community-join-form">
+                    <input type="email" placeholder="Enter your Email here" class="community-input" required>
                     <button type="submit" class="community-submit">Join Now</button>
                 </form>
                 
                 <div class="community-socials">
                     <span class="social-text">follow us on our social to stay update</span>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/sashtraherbals/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@sashtraherbals" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://wa.me/919052724545" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>

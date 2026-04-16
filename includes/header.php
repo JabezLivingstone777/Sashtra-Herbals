@@ -43,7 +43,10 @@
         </nav>
         
         <div class="nav-right header-actions">
-            <a href="wishlist.php" class="nav-icon"><i class="fa-regular fa-heart"></i></a>
+            <a href="wishlist.php" class="nav-icon wishlist-icon">
+                <i class="fa-regular fa-heart"></i>
+                <span class="wishlist-count">0</span>
+            </a>
             <a href="#" class="nav-icon cart-icon">
                 <i class="fa-solid fa-bag-shopping"></i>
                 <span class="cart-count">2</span>

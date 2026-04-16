@@ -21,7 +21,7 @@ foreach ($file in $files) {
     
     # Use curl to upload. Encode spaces in remote path.
     $userAuth = "${ftpUser}:${ftpPass}"
-    $encodedRemotePath = $remotePath.Replace(" ", "%20")
+    $encodedRemotePath = $remotePath.Replace(" ", "%20").Replace("&", "%26")
     & curl.exe -T "$($file.FullName)" --user $userAuth "ftp://$ftpHost/$encodedRemotePath" --ftp-create-dirs -s
 
 

@@ -6,11 +6,12 @@
             <div class="footer-col">
                 <h4 class="footer-title">Categories</h4>
                 <ul class="footer-list">
-                    <li><a href="#">Hair Care</a></li>
-                    <li><a href="#">Skin Care</a></li>
-                    <li><a href="#">Wellness</a></li>
-                    <li><a href="#">Stress-Relief</a></li>
-                    <li><a href="#">Weekend Rituals</a></li>
+                    <li><a href="shop.php?category=Hair+Care">Hair Care</a></li>
+                    <li><a href="shop.php?category=Skin+Care">Skin Care</a></li>
+                    <li><a href="shop.php?category=Wellness">Wellness</a></li>
+                    <li><a href="shop.php?category=Stress+Relief">Stress Relief</a></li>
+                    <li><a href="shop.php?category=Weekend+Rituals">Weekend Rituals</a></li>
+                    <li><a href="shop.php?category=AntiAging">AntiAging</a></li>
                 </ul>
             </div>
 
@@ -184,6 +185,6 @@
 
 <script src="assets/js/wishlist.js?v=<?php echo filemtime('assets/js/wishlist.js'); ?>"></script>
 <script src="assets/js/cart.js?v=<?php echo filemtime('assets/js/cart.js'); ?>"></script>
-<script src="assets/js/script.js"></script>
+<script src="assets/js/script.js?v=<?php echo filemtime('assets/js/script.js'); ?>"></script>
 </body>
 </html>

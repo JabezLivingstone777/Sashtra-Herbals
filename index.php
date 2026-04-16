@@ -69,27 +69,39 @@
             <div class="grid-4">
                 <a href="shop.php?category=Hair+Care" class="category-card">
                     <div class="category-img-wrapper">
-                        <img src="assets/img/hair.png" alt="Hair Care" onerror="this.src='https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=2574&auto=format&fit=crop';">
+                        <img src="assets/img/hairCare.webp" alt="Hair Care" onerror="this.src='https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=2574&auto=format&fit=crop';">
                     </div>
                     <h3>Hair Care</h3>
                 </a>
                 <a href="shop.php?category=Skin+Care" class="category-card">
                     <div class="category-img-wrapper">
-                        <img src="assets/img/skin.jpg" alt="Skin Care" onerror="this.src='https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=2670&auto=format&fit=crop';">
+                        <img src="assets/img/skinCare.webp" alt="Skin Care" onerror="this.src='https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=2670&auto=format&fit=crop';">
                     </div>
                     <h3>Skin Care</h3>
                 </a>
                 <a href="shop.php?category=Wellness" class="category-card">
                     <div class="category-img-wrapper">
-                        <img src="assets/img/wellness.png" alt="Wellness">
+                        <img src="assets/img/wellness.webp" alt="Wellness">
                     </div>
                     <h3>Wellness</h3>
                 </a>
-                <a href="shop.php?category=Aromatherapy" class="category-card">
+                <a href="shop.php?category=Weekend+Rituals" class="category-card">
                     <div class="category-img-wrapper">
-                        <img src="assets/img/aromatherapy.png" alt="Aromatherapy" onerror="this.src='https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=80&w=2574&auto=format&fit=crop';">
+                        <img src="assets/img/weekendRituals.webp" alt="Weekend Rituals" onerror="this.src='https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=80&w=2574&auto=format&fit=crop';">
                     </div>
-                    <h3>Aromatherapy</h3>
+                    <h3>Weekend Rituals</h3>
+                </a>
+                <a href="shop.php?category=Stress+Relief" class="category-card">
+                    <div class="category-img-wrapper">
+                        <img src="assets/img/stressRelief.webp" alt="Stress Relief" onerror="this.src='https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2720&auto=format&fit=crop';">
+                    </div>
+                    <h3>Stress Relief</h3>
+                </a>
+                <a href="shop.php?category=AntiAging" class="category-card">
+                    <div class="category-img-wrapper">
+                        <img src="assets/img/antiAging.webp" alt="AntiAging" onerror="this.src='https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2670&auto=format&fit=crop';">
+                    </div>
+                    <h3>AntiAging</h3>
                 </a>
             </div>
         </div>
@@ -160,6 +172,7 @@
                     <!-- Product 4 -->
                     <div class="product-card" data-price="500">
                         <div class="product-img-wrapper">
+                            <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
                             <img src="assets/img/products/product4.png" alt="Powder Hair Cleanser">
                         </div>
                         <div class="product-info">
@@ -174,6 +187,7 @@
                     <!-- Product 5 -->
                     <div class="product-card" data-price="450">
                         <div class="product-img-wrapper">
+                            <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
                             <img src="assets/img/products/product5.png" alt="Botanical Shampoo">
                         </div>
                         <div class="product-info">
@@ -188,6 +202,7 @@
                     <!-- Product 6 -->
                     <div class="product-card" data-price="480">
                         <div class="product-img-wrapper">
+                            <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
                             <img src="assets/img/products/product6.png" alt="Herbal Conditioner">
                         </div>
                         <div class="product-info">
@@ -202,6 +217,7 @@
                     <!-- Product 7 -->
                     <div class="product-card" data-price="600">
                         <div class="product-img-wrapper">
+                            <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
                             <img src="assets/img/products/product7.png" alt="Scalp Treatment">
                         </div>
                         <div class="product-info">
@@ -216,6 +232,7 @@
                     <!-- Product 8 -->
                     <div class="product-card" data-price="550">
                         <div class="product-img-wrapper">
+                            <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
                             <img src="assets/img/products/product8.png" alt="Leafy Hair Mask">
                         </div>
                         <div class="product-info">
@@ -230,6 +247,7 @@
                     <!-- Product 9 -->
                     <div class="product-card hidden-card" data-price="720">
                         <div class="product-img-wrapper">
+                            <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
                             <img src="assets/img/products/product9.png" alt="Vital Hair Serum">
                         </div>
                         <div class="product-info">
@@ -244,6 +262,7 @@
                     <!-- Product 10 -->
                     <div class="product-card hidden-card" data-price="350">
                         <div class="product-img-wrapper">
+                            <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
                             <img src="assets/img/products/product10.png" alt="Pure Neem Oil">
                         </div>
                         <div class="product-info">
@@ -377,7 +396,7 @@
                 <div class="banner-col banner-left">
                     <h2 class="banner-title">Why our shelf<br>Life is low.</h2>
                     <p class="banner-subtitle">Zero synthetic preservatives. Just fresh, potent botanicals harvested within weeks.</p>
-                    <button class="btn btn-light btn-pill">Learn more</button>
+                    <a href="about.php" class="btn btn-light btn-pill">Learn more</a>
                 </div>
                 
                 <div class="banner-col banner-center">
@@ -408,42 +427,42 @@
                 <!-- Item 1 -->
                 <a href="#" class="concern-item">
                     <div class="concern-img">
-                        <img src="assets/img/shopbyconcern/shop1.png" alt="Scalp Health" onerror="this.src='https://images.unsplash.com/photo-1519735811596-c13b605de5a8?q=80&w=2600&auto=format&fit=crop';">
+                        <img src="assets/img/shopbyconcern/scalpHealth.webp" alt="Scalp Health" onerror="this.src='https://images.unsplash.com/photo-1519735811596-c13b605de5a8?q=80&w=2600&auto=format&fit=crop';">
                     </div>
                     <span class="concern-name">Scalp Health</span>
                 </a>
                 <!-- Item 2 -->
                 <a href="#" class="concern-item">
                     <div class="concern-img">
-                        <img src="assets/img/shopbyconcern/shop2.png" alt="Dryness & Hydration" onerror="this.src='https://images.unsplash.com/photo-1552046122-03184de85e08?q=80&w=2574&auto=format&fit=crop';">
+                        <img src="assets/img/shopbyconcern/dryness&hydration.webp" alt="Dryness & Hydration" onerror="this.src='https://images.unsplash.com/photo-1552046122-03184de85e08?q=80&w=2574&auto=format&fit=crop';">
                     </div>
                     <span class="concern-name">Dryness & Hydration</span>
                 </a>
                 <!-- Item 3 -->
                 <a href="#" class="concern-item">
                     <div class="concern-img">
-                        <img src="assets/img/shopbyconcern/shop3.png" alt="Sensitivity & Redness" onerror="this.src='https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=2576&auto=format&fit=crop';">
+                        <img src="assets/img/shopbyconcern/sensitivity&redness.webp" alt="Sensitivity & Redness" onerror="this.src='https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=2576&auto=format&fit=crop';">
                     </div>
                     <span class="concern-name">Sensitivity & Redness</span>
                 </a>
                 <!-- Item 4 -->
                 <a href="#" class="concern-item">
                     <div class="concern-img">
-                        <img src="assets/img/shopbyconcern/shop4.png" alt="Anti-Aging & Vitality" onerror="this.src='https://images.unsplash.com/photo-1512403754473-27834f0b99ce?q=80&w=2670&auto=format&fit=crop';">
+                        <img src="assets/img/shopbyconcern/Antiaging&vitality.webp" alt="Anti-Aging & Vitality" onerror="this.src='https://images.unsplash.com/photo-1512403754473-27834f0b99ce?q=80&w=2670&auto=format&fit=crop';">
                     </div>
                     <span class="concern-name">Anti-Aging & Vitality</span>
                 </a>
                 <!-- Item 5 -->
                 <a href="#" class="concern-item">
                     <div class="concern-img">
-                        <img src="assets/img/shopbyconcern/shop5.png" alt="Sleep & Relaxation" onerror="this.src='https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?q=80&w=2660&auto=format&fit=crop';">
+                        <img src="assets/img/shopbyconcern/sleep&relaxation.webp" alt="Sleep & Relaxation" onerror="this.src='https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?q=80&w=2660&auto=format&fit=crop';">
                     </div>
                     <span class="concern-name">Sleep & Relaxation</span>
                 </a>
                 <!-- Item 6 -->
                 <a href="#" class="concern-item">
                     <div class="concern-img">
-                        <img src="assets/img/shopbyconcern/shop6.png" alt="Energy & Focus" onerror="this.src='https://images.unsplash.com/photo-1490474418177-01f9a2b40440?q=80&w=2670&auto=format&fit=crop';">
+                        <img src="assets/img/shopbyconcern/energy&focus.webp" alt="Energy & Focus" onerror="this.src='https://images.unsplash.com/photo-1490474418177-01f9a2b40440?q=80&w=2670&auto=format&fit=crop';">
                     </div>
                     <span class="concern-name">Energy & Focus</span>
                 </a>
@@ -706,17 +725,17 @@
                     <p class="community-subtitle">RECEIVE SEASONAL RITUALS, EARLY ACCESS, AND BOTANICAL WISDOM</p>
                 </div>
                 
-                <form class="community-form">
-                    <input type="email" placeholder="Enter your Email here" class="community-input">
+                <form class="community-form" id="community-join-form">
+                    <input type="email" placeholder="Enter your Email here" class="community-input" required>
                     <button type="submit" class="community-submit">Join Now</button>
                 </form>
                 
                 <div class="community-socials">
                     <span class="social-text">follow us on our social to stay update</span>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/sashtraherbals/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@sashtraherbals" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://wa.me/919052724545" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>

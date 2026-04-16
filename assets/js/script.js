@@ -1,6 +1,7 @@
 // Sashra Herbals - Interaction Scripts
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log("Sashra Herbals Interaction Script Initialized");
     const header = document.getElementById('main-header');
     
     // --- Header Scroll Effect ---
@@ -159,5 +160,39 @@ document.addEventListener('DOMContentLoaded', function() {
         toSignup.addEventListener('click', function() {
             authContainer.classList.remove('right-panel-active');
         });
+    }
+
+    // --- Join Our Community Form ---
+    const communityForm = document.getElementById('community-join-form');
+    if (communityForm) {
+        communityForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const emailInput = this.querySelector('.community-input');
+            const submitBtn = this.querySelector('.community-submit');
+            
+            if (emailInput.value) {
+                const originalBtnText = submitBtn.textContent;
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Joining...';
+                
+                // Simulate API call
+                setTimeout(() => {
+                    submitBtn.textContent = 'Joined!';
+                    submitBtn.style.background = '#8A9B64';
+                    
+                    setTimeout(() => {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = originalBtnText;
+                        submitBtn.style.background = '';
+                        communityForm.reset();
+                    }, 3000);
+                }, 1500);
+            }
+        });
+    }
+
+    // --- Safety Check for Mobile Menu ---
+    if (!menuToggle) {
+        console.warn("Mobile menu toggle not found on this page.");
     }
 });

@@ -174,7 +174,8 @@ header.scrolled {
     /* For thinner icons */
 }
 
-.cart-icon .cart-count {
+.cart-icon .cart-count,
+.wishlist-icon .wishlist-count {
     position: absolute;
     top: -5px;
     right: -8px;
@@ -586,6 +587,13 @@ header.scrolled {
     gap: 30px;
 }
 
+#collections .grid-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
 .section-header {
     margin-bottom: 70px;
     text-align: center;
@@ -837,6 +845,7 @@ header.scrolled {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    position: relative;
 }
 
 .product-img-wrapper img {
@@ -1927,6 +1936,7 @@ header.scrolled {
     background: url('../img/shop/breadcrum1.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
